@@ -1,0 +1,83 @@
+{
+  "tasks": [
+    {
+      "id": "102",
+      "title": "Build Login Module",
+      "description": "Create login form with validation",
+      "completed": true
+    },
+    {
+      "id": "103",
+      "title": "Create Registration Page",
+      "description": "Store user data in localStorage",
+      "completed": true
+    },
+    {
+      "id": "104",
+      "title": "Setup JSON Server",
+      "description": "Run backend on localhost",
+      "completed": true
+    },
+    {
+      "id": "105",
+      "title": "Implement CRUD Operations",
+      "description": "Add, edit, delete tasks using API",
+      "completed": true
+    },
+    {
+      "id": "106",
+      "title": "Design Dashboard UI",
+      "description": "Use Tailwind CSS for styling",
+      "completed": false
+    },
+    {
+      "id": "107",
+      "title": "Add Task Completion Feature",
+      "description": "Mark tasks as completed",
+      "completed": true
+    },
+    {
+      "id": "108",
+      "title": "Fix Bugs",
+      "description": "Resolve errors in API calls",
+      "completed": false
+    },
+    {
+      "id": "109",
+      "title": "Optimize Performance",
+      "description": "Improve rendering and API efficiency",
+      "completed": false
+    },
+    {
+      "id": "110",
+      "title": "Prepare for Interview",
+      "description": "Revise React and TypeScript concepts",
+      "completed": false
+    },
+    {
+      "id": "xxVqv5Uq5-A",
+      "title": "learning react",
+      "description": "learning react",
+      "completed": true
+    },
+    {
+      "id": "nefHM5skJEw",
+      "title": "learning something new",
+      "description": "learn something new",
+      "completed": false
+    },
+    {
+      "id": "xnBmbdWtT1Q",
+      "title": "sad",
+      "description": "sas",
+      "completed": false
+    },
+    {
+      "id": "ENgBJae3Qcc",
+      "title": "as",
+      "description": "as",
+      "completed": false
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
