@@ -15,24 +15,21 @@ const AddTask: React.FC<TaskProps> = ({ onAddTask }) => {
     });
   };
 
-  // ✅ FIXED (no event, no preventDefault)
-const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-  e.preventDefault();
+  const handleSubmit = () => {
+    if (!data.title || !data.description) return;
 
-  if (!data.title || !data.description) return;
+    const newTask = {
+      id: Date.now().toString(),
+      title: data.title,
+      description: data.description,
+      completed: data.completed,
+    };
 
-  const newTask = {
-    id: Date.now().toString(),
-    title: data.title,
-    description: data.description,
-    completed: data.completed,
+    onAddTask(newTask);
   };
 
-  onAddTask(newTask);
-};
-
   return (
-    <form onSubmit={handleSubmit} className="bg-white p-6 rounded-2xl shadow-md max-w-md mx-auto mt-6">
+    <div className="bg-white p-6 rounded-2xl shadow-md max-w-md mx-auto mt-6">
       <h2 className="text-xl font-semibold mb-4 text-center">
         Add New Task
       </h2>
@@ -56,12 +53,13 @@ const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
       />
 
       <button
-        type="submit"
+        type="button"
+        onClick={handleSubmit}
         className="w-full bg-blue-500 text-white py-2"
       >
         Add Task
       </button>
-    </form>
+    </div>
   );
 };
 

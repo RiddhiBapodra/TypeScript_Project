@@ -36,6 +36,11 @@ const Login: React.FC = () => {
     if (validUser) {
       localStorage.setItem("isLoggedIn", "true");
       navigate("/dashboard");
+
+      setData({
+        email: "",
+        password: "",
+      })
     } else {
       alert("Invalid email or password");
     }
